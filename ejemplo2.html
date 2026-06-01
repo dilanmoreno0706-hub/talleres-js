@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2.1 - Tarjeta personal</title>
+</head>
+<body>
+    <h1>Mire la consola (f12)</h1>
+
+    <script>
+        //1. Declara tus datos personales
+        const nombre = "dilan david";
+        const apellido = "moreno cabrera";
+        const edad = 20;
+        const ciudad = "cúcuta";
+        const programa = "analisis y desarrollo de software";
+        const ficha = "3406234";
+        const jornada = "diurna";
+        const semestre = "primero";
+
+        let estudiante = true;
+
+        //2. Imprime una tarjeta personal en consola
+        console.log("===TARJETA PERSONAL===");
+        console.log(`Nombre: ${nombre} ${apellido}`);
+        console.log(`Edad: ${edad} años`);
+        console.log(`Ciudad: ${ciudad}`);
+        console.log(`¿Es estudiante?: ${estudiante}`);
+        //3. calcular el año de nacimiento aproximado
+        const anioActual = 2026;
+        const anioNacimiento = anioActual - edad;
+        console.log(`Año aproximado de nacimiento: ${anioNacimiento}`);
+         //4. imprime carnet estudiantil
+        console.log("===TARJETA ESTUDIANTIL===");
+        console.log(`Programa: ${programa}`);
+        console.log(`Ficha: ${ficha}`);
+        console.log(`Jornada: ${jornada}`);
+        console.log(`Semestre: ${semestre}`);
+    </script>
+</body>
+</html>
