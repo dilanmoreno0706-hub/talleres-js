@@ -27,3 +27,37 @@ if ( password.length < 8) {
 } else {
     console.log("contraseña válida ✔");
 }
+// retos/ #1 calificador SENA
+const nota = 67
+
+if (nota >= 90 && nota <= 100){
+    console.log("sobresaliente");
+}else if (nota >=80 && nota <=89){
+    console.log("Notable");
+}else if (nota >=70 && nota <=79){
+    console.log( "Aprobado");
+}else if ( nota >=0 && nota<=60){
+    console.log("No aprobado");
+}else{
+    console.log("nota inválida");
+}
+// operador terminario
+let resultado = ( nota>= 70 && nota <=100) ? "Aprobó" : "No aprobó";
+console.log( resultado);
+
+//reto/ #2simulador de cajeros automático
+const saldo = 1000000;
+const retiro = 600000;
+
+if ( retiro > saldo){
+    console.log("Fondos insuficientes");
+}else if (retiro <= 0 ){
+    console.log("Monto inválido");
+}else if ( retiro % 10000 === 0){
+    const nuevoSaldo = saldo - retiro;
+    console.log("Retiro realizado con éxito.");
+    console.log("nuevo saldo: $" + nuevoSaldo);
+
+}else {
+    console.log(" Solo se permiten retiros múltiplos de 10000");
+}

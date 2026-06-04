@@ -7,7 +7,7 @@ console.log (`Área: ${area} cm2`);
 console.log (`Perímetro: ${perimetro} cm`);
 
 // saber si un numero es par o impar usando el operador %
-const numero = 7;
+const numero = 6;
 const esPar = numero % 2 === 0;
 console.log(`¿${numero} es par?: ${esPar}`);
 
