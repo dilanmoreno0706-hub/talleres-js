@@ -46,18 +46,19 @@ let resultado = ( nota>= 70 && nota <=100) ? "Aprobó" : "No aprobó";
 console.log( resultado);
 
 //reto/ #2simulador de cajeros automático
-const saldo = 1000000;
-const retiro = 600000;
+let saldo = 1000000;
+let retiro = 1000000;
 
 if ( retiro > saldo){
     console.log("Fondos insuficientes");
 }else if (retiro <= 0 ){
     console.log("Monto inválido");
-}else if ( retiro % 10000 === 0){
-    const nuevoSaldo = saldo - retiro;
-    console.log("Retiro realizado con éxito.");
-    console.log("nuevo saldo: $" + nuevoSaldo);
+}else if ( retiro % 10000 == 0){
+    console.log("si es multiplo" );
+    saldo = saldo - retiro;
 
-}else {
-    console.log(" Solo se permiten retiros múltiplos de 10000");
+}else{
+   console.log("solo se permite retiros multiplos de 10000");
 }
+
+ console.log(`Tu nuevo saldo es: ${saldo}`);
