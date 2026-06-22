@@ -61,3 +61,30 @@ for(let m= 1; m <= altura; m++){
     console.log(linea);
 }
 //retos /#7
+console.log( " tabla de multiplicar del 8");
+const tabla2 = 8;
+for( let o = 1; o <= 12; o++){
+    console.log(`${tabla2} * ${o} = ${tabla2 * o}`);
+}
+
+//reto #8 Factorial de un numero (6)
+let numero2 = 6;
+let factorial = 1;
+
+for (let t = 1; t <= numero2; t++) {
+    factorial = factorial * t;
+}
+
+console.log(`El factorial de ${numero2} es: ${factorial}`);
+//reto #9 Adivinanza de número 
+const secreto = 7;
+let intentos = 1;
+
+while (intentos <= 20){
+    if(intentos === secreto) {
+        console.log(`¡Encontrado en el intento ${intentos}!`);
+        break;
+    }
+    intentos++;
+}
+ 
